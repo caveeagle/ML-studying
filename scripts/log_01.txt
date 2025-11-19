@@ -1,0 +1,39 @@
+
+fit_model_m1:
+
+Timer: 902 sec
+
+{'max_depth': 25, 'min_samples_leaf': 2, 'n_estimators': 300}
+Best R2: 0.6798565138583884
+
+######################
+
+fit_model_m2:
+
+
+Timer: 74 sec
+
+{'max_depth': None, 'min_samples_leaf': 2, 'n_estimators': 300}
+Best R2: 0.660662460267719
+
+######################
+
+best_model:
+
+For the best model (TREES_NUMBER=300)
+
+RMSE: 187186.295 sec
+MAE: 79301.571 sec
+R2: 0.656 sec
+For the best model (TREES_NUMBER=300)
+
+RMSE: 241642.176 sec
+MAE: 83274.434 sec
+R2: 0.601 sec
+For the best model (TREES_NUMBER=300)
+
+=======================
+RMSE: 176945.912 sec
+MAE: 79774.449 sec
+R2: 0.683 sec
+=======================
