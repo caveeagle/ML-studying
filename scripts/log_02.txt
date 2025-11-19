@@ -1,0 +1,43 @@
+
+Timer: 64 sec
+
+{'max_depth': None, 'min_samples_leaf': 2, 'n_estimators': 100}
+Best R2: 0.43482091070902645
+
+Task completed!
+Begin to work...
+
+
+Timer: 667 sec
+
+{'max_depth': None, 'min_samples_leaf': 2, 'n_estimators': 500}
+Best R2: 0.4958219710410029
+
+Task completed!
+Begin to work...
+
+
+Timer: 359 sec
+
+{'max_depth': 20, 'min_samples_leaf': 2, 'n_estimators': 200}
+Best R2: 0.46604986957856137
+
+Task completed!
+Begin to work...
+
+
+Timer: 309 sec
+
+{'max_depth': 20, 'min_samples_leaf': 1, 'n_estimators': 200}
+Best R2: 0.49393393616416714
+
+Task completed!
+Begin to work...
+
+
+Timer: 1192 sec
+
+{'max_depth': 20, 'min_samples_leaf': 2, 'n_estimators': 500}
+Best R2: 0.4933773830080529
+
+Task completed!

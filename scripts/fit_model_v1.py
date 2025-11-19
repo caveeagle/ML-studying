@@ -42,15 +42,20 @@ TEST_SIZE = 0.2
 
 ###  PARAMETERS SETS ###
 
-TREES_NUMBER_SET = [100,200,300,400,500]
+#TREES_NUMBER_SET = [100,200,300,400,500]
+TREES_NUMBER_SET = [200,500,800]
 
-MAX_DEPTH_SET = [None,10,15,20,25]
 
-MIN_LEAFS_NUM = [1, 2, 3, 4]
+#MAX_DEPTH_SET = [None,10,15,20,25]
+MAX_DEPTH_SET = [20]
+
+MIN_LEAFS_NUM = [1, 2]
+#MIN_LEAFS_NUM = [2]
 
 #############################################
 #############################################
 #############################################
+logger.info('Begin to work...\n')
 
 ###  Split dataset  ###
 
