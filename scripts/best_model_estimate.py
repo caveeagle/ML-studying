@@ -100,7 +100,7 @@ console_handler = logging.StreamHandler()
 logger.addHandler(console_handler)
 
 # handler for file
-file_handler = logging.FileHandler('log.txt')
+file_handler = logging.FileHandler('log_03.txt')
 logger.addHandler(file_handler)
 
 #############################################
@@ -108,9 +108,9 @@ logger.addHandler(file_handler)
 logger.info(f"For the best model (TREES_NUMBER={TREES_NUMBER})\n")
 
 
-logger.info(f"RMSE: {rmse_mean:.3f} sec")
-logger.info(f"MAE: {mae_mean:.3f} sec")
-logger.info(f"R2: {r2_mean:.3f} sec")
+logger.info(f"RMSE: {rmse_mean:.3f}")
+logger.info(f"MAE: {mae_mean:.3f}")
+logger.info(f"R2: {r2_mean:.3f}")
 
 #############################################
 
