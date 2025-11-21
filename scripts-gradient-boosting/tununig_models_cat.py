@@ -61,18 +61,29 @@ X_train, X_valid, y_train, y_valid = train_test_split(X, y, test_size=0.2, rando
 start_time = time.perf_counter()
 ################################
 
-param_dist = {
-    'learning_rate': [0.01, 0.03, 0.05, 0.08],
-    'depth': [4, 5, 6, 7],
-    'l2_leaf_reg': [3, 5, 7, 9],
-    'bagging_temperature': [0.0, 0.5, 1.0, 1.5],
-    'iterations': [500, 1000, 1500]
-}
+if(0):
+    param_dist = {
+        'learning_rate': [0.01, 0.03, 0.05, 0.08],
+        'depth': [4, 5, 6, 7],
+        'l2_leaf_reg': [3, 5, 7, 9],
+        'bagging_temperature': [0.0, 0.5, 1.0, 1.5],
+        'iterations': [500, 1000, 1500]
+    }
+
+if(1):
+    param_dist = {
+        'learning_rate': [0.05],
+        'depth': [6],
+        'l2_leaf_reg': [3],
+        'bagging_temperature': [1.5],
+        'iterations': [500, 1000, 2000, 3000]
+    }
+
 
 # Base model
 model = CatBoostRegressor(
     loss_function='RMSE',
-    random_seed=42,
+    random_seed=None,
     verbose=0,
     early_stopping_rounds=50
 )

@@ -1,2 +1,15 @@
-Begin to work...
+
+Timer: 9644 sec = 2 hours 40 min 
+
+Best params of model:{  'learning_rate': 0.05, 
+                        'l2_leaf_reg': 3, 
+                        'iterations': 1000, 
+                        'depth': 6, 
+                        'bagging_temperature': 1.5}
+
+Validation RMSE:107054
+
+Validation R2:0.762
+
+#####################################
 

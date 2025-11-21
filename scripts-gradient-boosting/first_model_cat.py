@@ -39,12 +39,12 @@ start_time = time.perf_counter()
 
 model = CatBoostRegressor(
     iterations=3000,           # maximum number of trees
-    learning_rate=0.03,        # smaller for higher precision
+    learning_rate=0.05,        # smaller for higher precision
     depth=6,                   # depth of the trees
-    l2_leaf_reg=5,             # regularization
-    bagging_temperature=1.0,   # stochasticity
+    l2_leaf_reg=3,             # regularization
+    bagging_temperature=1.5,   # stochasticity
     loss_function='RMSE',      # regression
-    random_seed=42,
+    random_seed=None,
     early_stopping_rounds=50,  # stop training if no improvement
     verbose=100
 )
