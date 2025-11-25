@@ -4,13 +4,9 @@ from sklearn.preprocessing import LabelEncoder
 
 ################################################
 
-filename = '../data/original_dataset_v4_caveeagle.csv'
+filename = '../data/preproc_dataset_v4_amine.csv'
 
 df = pd.read_csv(filename, delimiter=',')
-
-##################################################################
-
-df.drop(columns=['property_id'], inplace=True)  # Delete index
 
 ##################################################################
 
@@ -19,42 +15,35 @@ df.drop(columns=['property_id'], inplace=True)  # Delete index
 if(0):
     
     for col in df.columns:
-        percent_nan = df[col].isna().mean() * 100
-        if percent_nan > 80:
-            print(f"{col}: {percent_nan:.1f}% ")
+        freq = df[col].value_counts(normalize=True, dropna=False)
+        top_value = freq.index[0] # Value 
+        top_freq = freq.iloc[0] * 100  # and Freq in percents
+    
+        if top_freq > 80:
+            print(f"{col}: {top_freq:.2f}%")
 
 if(1):        
-    near_constant_features = [ 'low_energy', 
-                                'heat_pump',
-                                'air_conditioning', 
-                                'alarm', 
-                                'garden_surface', 
-                                'rain_water_tank', 
-                                'planning_permission_granted', 
-                                'surroundings_protected', 
-                                'security_door', 
-                                'frontage_width', 
-                                'terrain_width_roadside', 
-                                'g_score', 
-                                'p_score']
+    near_constant_features = [ 'is_furnished','running_water','has_swimming_pool','property_type_other',
+                                'has_equipped_kitchen_Not equipped','property_subtype_studio',
+                                'property_subtype_duplex','leased']
             
     df.drop(columns=near_constant_features, inplace=True)
+    
+    cols_to_drop = []
+    for col in df.columns:
+        if not col.startswith('locality_'):
+            continue
+        
+        counts = df[col].value_counts(dropna=False)
+        top_value = counts.index[0]
+        top_freq = counts.iloc[0] / len(df) * 100
+    
+        if top_freq > 90:
+            cols_to_drop.append(col)
+
+    df.drop(columns=cols_to_drop, inplace=True)
 
 ##################################################################
-
-if(0):
-    print(df.dtypes)
-    print('\ntype=object:')
-    print( df.select_dtypes(include='object').columns.tolist() )
-
-if(0):
-    df2 = df.select_dtypes(include='object')
-    filename = 'tmp.csv'
-    df2.to_csv(filename, sep=',', index=False)
-
-
-##################################################################
-
 
 if (1):
 

@@ -8,9 +8,8 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import mean_squared_error, mean_absolute_error, r2_score
 from sklearn.model_selection import GridSearchCV
 
-from service_functions import send_telegramm_message
-
 from xgboost import XGBRegressor
+from xgboost import callback
 
 import logging
 import time
@@ -40,18 +39,22 @@ logger.addHandler(file_handler)
 
 ###  PARAMETERS SETS ###
 
-TREES_NUMBER_SET = [1200]
+#TREES_NUMBER_SET = [100,300,500,800]
+#TREES_NUMBER_SET = [500]
+#TREES_NUMBER_SET = [450,500,550,600,700,800]
 
+TREES_NUMBER_SET = [800]
+
+
+
+#MAX_DEPTH_SET = [3,4,5,6]
 MAX_DEPTH_SET = [6]
 
+#LEARNING_RATE_SET = [0.05, 0.1]
 LEARNING_RATE_SET = [0.05]
 
-SUBSAMPLE_SET = [0.9]
-
-#N_FOLD = 5
-N_FOLD = 3
-
-SEND_TELEGRAMM_MES = 0
+#SUBSAMPLE_SET = [0.7, 0.8, 0.9, 1.0]
+SUBSAMPLE_SET = [0.8]
 
 #############################################
 #############################################
@@ -61,8 +64,6 @@ logger.info('GRID PARAMS:')
 
 grid_str = f'TREES_NUMBER_SET = {TREES_NUMBER_SET}\n'
 grid_str += f'MAX_DEPTH_SET = {MAX_DEPTH_SET}\n'
-grid_str += f'LEARNING_RATE_SET = {LEARNING_RATE_SET}\n'
-grid_str += f'SUBSAMPLE_SET = {SUBSAMPLE_SET}\n\n'
 
 logger.info(grid_str)
 
@@ -83,21 +84,25 @@ param_grid = {
     'n_estimators': TREES_NUMBER_SET,
     'max_depth': MAX_DEPTH_SET,
     'learning_rate': LEARNING_RATE_SET,
-    'subsample': SUBSAMPLE_SET    
+    'subsample': SUBSAMPLE_SET
 }
 
 grid = GridSearchCV(
     XGBRegressor(),
     param_grid,
-    cv=N_FOLD,    # N-fold cross-validation
+    cv=5,    # N-fold cross-validation
     scoring='r2',
-    verbose=2,
-    return_train_score=True,  
+    verbose=1, # ! Changed!
+    return_train_score=True, 
     n_jobs=3 # ! Changed!
 )
 
-
-grid.fit(X_train, y_train)
+grid.fit(
+    X_train,
+    y_train,
+    eval_set=[(X_test, y_test)],
+    verbose=False
+)
 
 ##############################
 end_time = time.perf_counter()
@@ -123,7 +128,7 @@ if 'mean_train_score' in grid.cv_results_:
 
 logger.info('\nTask completed!\n\n')
 
-if(SEND_TELEGRAMM_MES):
+if(0):
     send_telegramm_message("Job completed")
 
 #############################################

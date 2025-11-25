@@ -51,8 +51,21 @@ R2: **0.810**
 
 The model was tested for overfitting. It is stable and shows no signs of overfitting.
 
-### KNN model
-**KNN model not suitable for this task, R2 < 0.5**
+### Other models
+KNN model not suitable for this task, R2 < 0.5
+CatBoost model gives results worse than classical boosting
+
+### 4. Results for XGBoost
+The XGBoost model was tested for two datasets, Amine's dataset was chosen as the best.
+The tuned model parameters are:
+`n_estimators=800`
+`max_depth=6`
+`learning_rate=0.05`
+`subsample=0.8`
+The other parameters also have been tested, but their default values proved to be the best. The following additional parameters were tested:
+`min_child_weight, gamma, reg_alpha, reg_lambda`
+The mean accuracy metrics are:
+R2: **0.800**
 
 
 
