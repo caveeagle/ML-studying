@@ -13,7 +13,7 @@ from tensorflow import keras
 import time
 #############################################
 
-filename = '../data/preproc_dataset_v4_cave.csv'
+filename = '../data/preproc_dataset_v4_amine.csv'
 
 df = pd.read_csv(filename, delimiter=',')
 
