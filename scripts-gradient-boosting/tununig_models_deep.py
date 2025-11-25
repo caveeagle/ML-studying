@@ -32,7 +32,7 @@ console_handler = logging.StreamHandler()
 logger.addHandler(console_handler)
 
 # handler for file
-file_handler = logging.FileHandler('log_deep.txt')
+file_handler = logging.FileHandler('log_deep_vtest.txt')
 logger.addHandler(file_handler)
 
 #############################################

@@ -1,0 +1,18 @@
+Begin to work...
+GRID PARAMS:
+TREES_NUMBER_SET = [1200]
+MAX_DEPTH_SET = [6]
+LEARNING_RATE_SET = [0.05]
+SUBSAMPLE_SET = [0.9]
+
+
+
+Timer: 9 sec
+
+{'learning_rate': 0.05, 'max_depth': 6, 'n_estimators': 1200, 'subsample': 0.9}
+Best R2: 0.7986058334290855
+Train R2: 0.9800, Test R2: 0.7986, Params: {'learning_rate': 0.05, 'max_depth': 6, 'n_estimators': 1200, 'subsample': 0.9}
+
+Task completed!
+
+
