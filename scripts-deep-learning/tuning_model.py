@@ -70,7 +70,7 @@ BATCH_SIZE = 64
 
 R2_LIST = []
 
-ITER_NUM = 3
+ITER_NUM = 8
 
 for i_num in range(ITER_NUM):
     
