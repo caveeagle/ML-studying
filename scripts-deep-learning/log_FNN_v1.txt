@@ -149,3 +149,249 @@ Timer: 50 sec
 
 
 Task completed!
+
+ITERATION: 0
+
+
+TRAIN WITH PARAMS:
+LEARNING_RATE = 0.001
+DEPTH = 2
+BATCH_SIZE = 64
+
+R2 on test set:0.781
+The best epoch: 17
+
+Cycle timer: 19 sec
+
+
+ITERATION: 1
+
+
+TRAIN WITH PARAMS:
+LEARNING_RATE = 0.001
+DEPTH = 2
+BATCH_SIZE = 64
+
+R2 on test set:0.739
+The best epoch: 7
+
+Cycle timer: 9 sec
+
+
+ITERATION: 2
+
+
+TRAIN WITH PARAMS:
+LEARNING_RATE = 0.001
+DEPTH = 2
+BATCH_SIZE = 64
+
+R2 on test set:0.774
+The best epoch: 16
+
+Cycle timer: 16 sec
+
+
+ITERATION: 3
+
+
+TRAIN WITH PARAMS:
+LEARNING_RATE = 0.001
+DEPTH = 2
+BATCH_SIZE = 64
+
+R2 on test set:0.779
+The best epoch: 12
+
+Cycle timer: 14 sec
+
+
+ITERATION: 4
+
+
+TRAIN WITH PARAMS:
+LEARNING_RATE = 0.001
+DEPTH = 2
+BATCH_SIZE = 64
+
+R2 on test set:0.761
+The best epoch: 7
+
+Cycle timer: 10 sec
+
+
+ITERATION: 5
+
+
+TRAIN WITH PARAMS:
+LEARNING_RATE = 0.001
+DEPTH = 2
+BATCH_SIZE = 64
+
+R2 on test set:0.745
+The best epoch: 6
+
+Cycle timer: 9 sec
+
+
+ITERATION: 6
+
+
+TRAIN WITH PARAMS:
+LEARNING_RATE = 0.001
+DEPTH = 2
+BATCH_SIZE = 64
+
+R2 on test set:0.766
+The best epoch: 14
+
+Cycle timer: 16 sec
+
+
+ITERATION: 7
+
+
+TRAIN WITH PARAMS:
+LEARNING_RATE = 0.001
+DEPTH = 2
+BATCH_SIZE = 64
+
+R2 on test set:0.732
+The best epoch: 8
+
+Cycle timer: 12 sec
+
+
+
+Mean R2 in cycles: 0.76
+
+Overall timer: 139 sec
+
+
+Task completed!
+#############################3
+###############################
+###############################
+###########################
+
+
+
+ITERATION: 0
+
+
+TRAIN WITH PARAMS:
+LEARNING_RATE = 0.001
+DEPTH = 3
+BATCH_SIZE = 64
+
+R2 on test set:0.766
+The best epoch: 11
+
+Cycle timer: 15 sec
+
+
+ITERATION: 1
+
+
+TRAIN WITH PARAMS:
+LEARNING_RATE = 0.001
+DEPTH = 3
+BATCH_SIZE = 64
+
+R2 on test set:0.785
+The best epoch: 8
+
+Cycle timer: 12 sec
+
+
+ITERATION: 2
+
+
+TRAIN WITH PARAMS:
+LEARNING_RATE = 0.001
+DEPTH = 3
+BATCH_SIZE = 64
+
+R2 on test set:0.769
+The best epoch: 7
+
+Cycle timer: 11 sec
+
+
+ITERATION: 3
+
+
+TRAIN WITH PARAMS:
+LEARNING_RATE = 0.001
+DEPTH = 3
+BATCH_SIZE = 64
+
+R2 on test set:0.768
+The best epoch: 4
+
+Cycle timer: 9 sec
+
+
+ITERATION: 4
+
+
+TRAIN WITH PARAMS:
+LEARNING_RATE = 0.001
+DEPTH = 3
+BATCH_SIZE = 64
+
+R2 on test set:0.785
+The best epoch: 12
+
+Cycle timer: 13 sec
+
+
+ITERATION: 5
+
+
+TRAIN WITH PARAMS:
+LEARNING_RATE = 0.001
+DEPTH = 3
+BATCH_SIZE = 64
+
+R2 on test set:0.779
+The best epoch: 9
+
+Cycle timer: 12 sec
+
+
+ITERATION: 6
+
+
+TRAIN WITH PARAMS:
+LEARNING_RATE = 0.001
+DEPTH = 3
+BATCH_SIZE = 64
+
+R2 on test set:0.780
+The best epoch: 8
+
+Cycle timer: 11 sec
+
+
+ITERATION: 7
+
+
+TRAIN WITH PARAMS:
+LEARNING_RATE = 0.001
+DEPTH = 3
+BATCH_SIZE = 64
+
+R2 on test set:0.770
+The best epoch: 7
+
+Cycle timer: 11 sec
+
+
+
+Mean R2 in cycles: 0.78
+
+Overall timer: 98 sec
+
+
+Task completed!
