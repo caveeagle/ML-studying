@@ -1,0 +1,151 @@
+
+ITERATION: 0
+
+
+TRAIN WITH PARAMS:
+LEARNING_RATE = 0.001
+DEPTH = 2
+BATCH_SIZE = 64
+
+R2 on test set:0.738
+The best epoch: 7
+
+ITERATION: 1
+
+
+TRAIN WITH PARAMS:
+LEARNING_RATE = 0.001
+DEPTH = 2
+BATCH_SIZE = 64
+
+R2 on test set:0.764
+The best epoch: 19
+
+ITERATION: 2
+
+
+TRAIN WITH PARAMS:
+LEARNING_RATE = 0.001
+DEPTH = 2
+BATCH_SIZE = 64
+
+R2 on test set:0.770
+The best epoch: 13
+
+ITERATION: 3
+
+
+TRAIN WITH PARAMS:
+LEARNING_RATE = 0.001
+DEPTH = 2
+BATCH_SIZE = 64
+
+R2 on test set:0.763
+The best epoch: 6
+
+ITERATION: 4
+
+
+TRAIN WITH PARAMS:
+LEARNING_RATE = 0.001
+DEPTH = 2
+BATCH_SIZE = 64
+
+R2 on test set:0.778
+The best epoch: 7
+
+Timer: 84 sec
+
+
+Task completed!
+
+ITERATION: 0
+
+
+TRAIN WITH PARAMS:
+LEARNING_RATE = 0.001
+DEPTH = 2
+BATCH_SIZE = 64
+
+R2 on test set:0.771
+The best epoch: 10
+
+ITERATION: 1
+
+
+TRAIN WITH PARAMS:
+LEARNING_RATE = 0.001
+DEPTH = 2
+BATCH_SIZE = 64
+
+R2 on test set:0.758
+The best epoch: 14
+
+ITERATION: 2
+
+
+TRAIN WITH PARAMS:
+LEARNING_RATE = 0.001
+DEPTH = 2
+BATCH_SIZE = 64
+
+R2 on test set:0.762
+The best epoch: 9
+
+
+Mean R2 in cycles: 0.76
+
+Timer: 53 sec
+
+
+Task completed!
+
+ITERATION: 0
+
+
+TRAIN WITH PARAMS:
+LEARNING_RATE = 0.001
+DEPTH = 2
+BATCH_SIZE = 64
+
+R2 on test set:0.776
+The best epoch: 13
+
+Timer: 15 sec
+
+
+ITERATION: 1
+
+
+TRAIN WITH PARAMS:
+LEARNING_RATE = 0.001
+DEPTH = 2
+BATCH_SIZE = 64
+
+R2 on test set:0.799
+The best epoch: 8
+
+Timer: 14 sec
+
+
+ITERATION: 2
+
+
+TRAIN WITH PARAMS:
+LEARNING_RATE = 0.001
+DEPTH = 2
+BATCH_SIZE = 64
+
+R2 on test set:0.780
+The best epoch: 8
+
+Timer: 13 sec
+
+
+
+Mean R2 in cycles: 0.78
+
+Timer: 50 sec
+
+
+Task completed!
